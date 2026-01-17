@@ -36,7 +36,7 @@ export const MENU_ITEMS = [
     name: "Ayam Goreng Berempah",
     description: "Heritage spiced fried chicken, crispy on the outside, juicy within",
     price: "RM 32",
-    image: "https://images.unsplash.com/photo-1626645738196-c2a72c8e4feb?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&h=400&fit=crop",
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ export const GALLERY_IMAGES = [
   },
   {
     id: 8,
-    src: "https://images.unsplash.com/photo-1567620905732-57f7976e172d?w=800&h=600&fit=crop",
+    src: "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&h=600&fit=crop",
     alt: "Dessert presentation",
     category: "food",
   },
