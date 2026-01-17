@@ -1,0 +1,21 @@
+import { NextResponse } from "next/server";
+import { cookies } from "next/headers";
+import { DEMO_SESSION_COOKIE } from "@/lib/demo/mode";
+
+export async function POST() {
+  try {
+    const cookieStore = await cookies();
+    cookieStore.delete(DEMO_SESSION_COOKIE);
+
+    return NextResponse.json({
+      success: true,
+      message: "Logged out successfully",
+    });
+  } catch (error) {
+    console.error("Logout error:", error);
+    return NextResponse.json(
+      { success: false, error: "An error occurred during logout" },
+      { status: 500 }
+    );
+  }
+}
